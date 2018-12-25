@@ -446,8 +446,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "fb1-2.l"
-#line 2 "fb1-2.l"
+#line 1 "fb1-4.l"
+#line 2 "fb1-4.l"
 	enum yytokentype {
 		NUMBER = 258,
 		ADD = 259,
@@ -677,7 +677,7 @@ YY_DECL
 		}
 
 	{
-#line 17 "fb1-2.l"
+#line 17 "fb1-4.l"
 
 #line 683 "lex.yy.c"
 
@@ -738,53 +738,53 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 18 "fb1-2.l"
+#line 18 "fb1-4.l"
 { return ADD; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 19 "fb1-2.l"
+#line 19 "fb1-4.l"
 { return SUB; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 20 "fb1-2.l"
+#line 20 "fb1-4.l"
 { return MUL; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 21 "fb1-2.l"
+#line 21 "fb1-4.l"
 { return DIV; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 22 "fb1-2.l"
+#line 22 "fb1-4.l"
 { return ABS; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 23 "fb1-2.l"
+#line 23 "fb1-4.l"
 {yylval = atoi(yytext); return NUMBER; }
 	YY_BREAK
 case 7:
 /* rule 7 can match eol */
 YY_RULE_SETUP
-#line 24 "fb1-2.l"
+#line 24 "fb1-4.l"
 { return EQL; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 25 "fb1-2.l"
+#line 25 "fb1-4.l"
 { /*ignore whitespace */ }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 26 "fb1-2.l"
+#line 26 "fb1-4.l"
 { printf("Mystery character %c\n", *yytext); }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 27 "fb1-2.l"
+#line 27 "fb1-4.l"
 ECHO;
 	YY_BREAK
 #line 791 "lex.yy.c"
@@ -1792,7 +1792,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 27 "fb1-2.l"
+#line 27 "fb1-4.l"
 
 
 int main(int agrc, char **argv) {
