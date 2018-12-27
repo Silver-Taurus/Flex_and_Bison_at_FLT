@@ -1,17 +1,14 @@
-/* simplest version of calculator */
-
 %{
 #include <stdio.h>
 %}
 
-/* declare tokens */
 %token NUMBER
 %token ADD SUB MUL DIV ABS
 %token EOL
 
 %%
-calclist:	 /* nothing */
-	| calclist exp EOL {printf(" = %d\n", $1); }	/* EOL is end of expression */
+calclist:
+	| calclist exp {printf(" = %d\n", $1) EOL; }
 	;
 
 exp: factor 
@@ -33,6 +30,3 @@ int main(int argc, char **argv) {
 	yyparse();
 }
 
-yyerror(char *s) {
-	fprintf(stderr,"error: %s\n",s);
-}
