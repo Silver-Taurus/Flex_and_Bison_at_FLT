@@ -1,0 +1,4 @@
+Hey this is Silver Taurus at the Four-Leaf-Tech or FLT
+and is trying to learn flex and bison out of which the flex is the first 
+one to be learnt and thus this is the basic program of testing the initials and basics of flex
+to be done.
